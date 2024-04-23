@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registered Courses</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="head">SaralSiksha</h1>
+<h3>Registered Courses</h3>
+
+
+<div class="courses-container">
+  <div class="course-box">
+    <h2>JAVA</h2>
+    <p><strong>Course ID:</strong> 12345</p>
+    <p>A programming language commonly used for building web applications and enterprise software.</p>
+    <p><strong>Schedule:</strong> 2024-04-20</p>
+    <button class="delete-btn" onclick="deleteCourse(this)">Delete</button>
+    <button class="pay-btn" onclick="openPayPage()">Pay</button>
+  </div>
+
+  <div class="course-box">
+    <h2>Web Development</h2>
+    <p><strong>Course ID:</strong> 12346</p>
+    <p>A course covering various aspects of web development, including HTML, CSS, JavaScript, and backend frameworks like Node.js or Django.</p>
+    <p><strong>Schedule:</strong> 2024-04-21</p>
+    <button class="delete-btn" onclick="deleteCourse(this)">Delete</button>
+    <button class="pay-btn" onclick="openPayPage()">Pay</button>
+  </div>
+
+  <div class="course-box">
+    <h2>DBMS</h2>
+    <p><strong>Course ID:</strong> 12349</p>
+    <p>Database Management System (DBMS) is a software for managing databases. This course covers database design, implementation, and querying using SQL.</p>
+    <p><strong>Schedule:</strong> 2024-04-24</p>
+    <button class="delete-btn" onclick="deleteCourse(this)">Delete</button>
+    <button class="pay-btn" onclick="openPayPage()">Pay</button>
+  </div>
+</div>
+<button class="back-btn" onclick="Back()">Back</button>
+<script>
+  function deleteCourse(button) {
+    var courseBox = button.parentElement;
+    courseBox.remove();
+  }
+
+  function openPayPage() {
+    window.location.href = "pay.html";
+  }
+
+  function Back(){
+    window.location.href = "user.html";
+  }
+</script>
+
+</body>
+</html>

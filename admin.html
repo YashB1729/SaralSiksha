@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="admin.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sedan:ital@0;1&display=swap" rel="stylesheet">
+</head>
+<body>
+<h1 class="head">SaralSiksha</h1>
+<h1>Welcome, Admin</h1>
+
+<div class="admin-actions">
+  <button id="post-course-btn">Post Course Details and Schedule</button>
+  <button id="modify-course-btn">Modify Course Details</button>
+  <button id="view-courses-btn">View List of Courses</button>
+  <button id="delete-course-btn">Delete a Posted Course</button>
+  <button id="view-users-btn">View List of Registered Users</button>
+  <button id="back-btn">Logout</button>
+</div>
+
+</body>
+</html>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+          document.getElementById("post-course-btn").addEventListener("click", function() {
+          window.location.href = "post_course.html";
+        });
+
+        document.getElementById("modify-course-btn").addEventListener("click", function() {
+          window.location.href = "modify_course.html";
+        });
+
+        document.getElementById("view-courses-btn").addEventListener("click", function() {
+          window.location.href = "view_courses.html";
+        });
+
+        document.getElementById("delete-course-btn").addEventListener("click", function() {
+          window.location.href = "delete_courses.html";
+        });
+
+        document.getElementById("view-users-btn").addEventListener("click", function() {
+          window.location.href = "view_users.html";
+        });
+
+        document.getElementById("back-btn").addEventListener("click", function() {
+          window.location.href = "login.html";
+        });
+      });
+      
+</script>

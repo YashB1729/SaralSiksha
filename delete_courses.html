@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delete Courses</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="head">SaralSiksha</h1>
+<h3>You can delete a posted course here</h3>
+
+<div class="courses-container">
+  <div class="course-box">
+    <h2>JAVA</h2>
+    <p><strong>Course ID:</strong> 12345</p>
+    <p>A programming language commonly used for building web applications and enterprise software.</p>
+    <p><strong>Schedule:</strong> 2024-04-20</p>
+    <button class="delete-btn">Delete</button>
+  </div>
+
+  <div class="course-box">
+    <h2>C++</h2>
+    <p><strong>Course ID:</strong> 12346</p>
+    <p>A powerful and flexible programming language often used for system and application software, game development, and more.</p>
+    <p><strong>Schedule:</strong> 2024-04-21</p>
+    <button class="delete-btn">Delete</button>
+  </div>
+
+  <div class="course-box">
+    <h2>Python</h2>
+    <p><strong>Course ID:</strong> 12347</p>
+    <p>An interpreted, high-level programming language known for its simplicity and readability. It's widely used in web development, data analysis, artificial intelligence, and more.</p>
+    <p><strong>Schedule:</strong> 2024-04-22</p>
+    <button class="delete-btn">Delete</button>
+  </div>
+
+  <div class="course-box">
+    <h2>Web Programming</h2>
+    <p><strong>Course ID:</strong> 12348</p>
+    <p>A course covering various aspects of web development, including HTML, CSS, JavaScript, and backend frameworks like Node.js or Django.</p>
+    <p><strong>Schedule:</strong> 2024-04-23</p>
+    <button class="delete-btn">Delete</button>
+  </div>
+
+  <div class="course-box">
+    <h2>DBMS</h2>
+    <p><strong>Course ID:</strong> 12349</p>
+    <p>Database Management System (DBMS) is a software for managing databases. This course covers database design, implementation, and querying using SQL.</p>
+    <p><strong>Schedule:</strong> 2024-04-24</p>
+    <button class="delete-btn">Delete</button>
+  </div>
+</div>
+<button class="back-btn" onclick="Back()">Back</button>
+</body>
+</html>
+
+<script>
+    
+    var deleteButtons = document.querySelectorAll('.delete-btn');
+  
+    deleteButtons.forEach(function(button) {
+      button.addEventListener('click', function() {
+        
+        var courseBox = button.parentElement;
+        courseBox.remove();
+      });
+    });
+
+    function Back(){
+      window.location.href = "admin.html";
+    }
+  </script>
+  
+  </body>
+  </html>

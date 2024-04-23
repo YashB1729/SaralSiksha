@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Details</title>
+  <style>
+    
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: black;
+    }
+    table {
+      margin-left: 20%;
+      width: 60%;
+      border-collapse: collapse;
+      background-color: #2a2929;
+      font-family: "Sedan", serif;
+      font-weight: bold;
+      font-style: normal;
+      color: whitesmoke;
+      font-size: 18px;
+    }
+
+    h2{
+        text-align: center;
+    }
+
+    body{
+        margin: 0;
+        font-size: 25px;
+    }
+
+    .head{
+        width: 100%;
+        height: 80px;
+        background-color: #ea9247;
+        margin: 0;
+        text-align: center;
+        padding-top: 20px;
+        font-size: 60px;
+        font-family: "Sedan", serif;
+        font-weight: 400;
+        font-style: normal;
+        margin-bottom: 50px;
+    }
+    
+    th, td {
+      padding: 8px;
+      text-align: left;
+      border-bottom: 1px solid black;
+    }
+    
+    th {
+      background-color: #3c3939;
+    }
+    .back-btn{
+      margin-top: 30px;
+      margin-left: 45%;
+      margin-bottom: 10px;
+      display: block;
+      width: 10%;
+      padding: 10px;
+      background-color: #ea9247;
+      color: black;
+      border: none;
+      border-radius: 15px;
+      cursor: pointer;
+      font-family: "Sedan", serif;
+      font-weight: bold;
+      font-style: normal;
+  }
+  
+  .back-btn:hover{
+      background-color: #d2691e;
+  }
+  
+
+  </style>
+</head>
+<body>
+    <h1 class="head">SaralSiksha</h1>
+<h2>Student Details</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name of Student</th>
+      <th>Registered Course</th>
+      <th>Payment Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Yash Bothra</td>
+      <td>Java</td>
+      <td>Paid</td>
+    </tr>
+    <tr>
+      <td>Shivam Sunda</td>
+      <td>Web Programming</td>
+      <td>Not Paid</td>
+    </tr>
+    <tr>
+        <td>Mayank Singh</td>
+        <td>Python</td>
+        <td>Paid</td>
+      </tr>
+    <tr>
+        <td>Punya Jain</td>
+        <td>DBMS</td>
+        <td>Paid</td>
+    </tr>
+  </tbody>
+</table>
+<button class="back-btn" onclick="Back()">Back</button>
+</body>
+</html>
+<script>
+  function Back(){
+    window.location.href = "admin.html";
+  }
+</script>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment Details</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: black;
+    }
+
+    .back-btn{
+      margin-top: 30px;
+      margin-left: 45%;
+      margin-bottom: 10px;
+      display: block;
+      width: 10%;
+      padding: 10px;
+      background-color: #ea9247;
+      color: black;
+      border: none;
+      border-radius: 15px;
+      cursor: pointer;
+      font-family: "Sedan", serif;
+      font-weight: bold;
+      font-style: normal;
+  }
+  
+  .back-btn:hover{
+      background-color: #d2691e;
+  }
+    .head{
+      width: 100%;
+      height: 80px;
+      background-color: #ea9247;
+      margin: 0;
+      text-align: center;
+      padding-top: 20px;
+      font-size: 60px;
+      font-family: "Sedan", serif;
+      font-weight: 400;
+      font-style: normal;
+      margin-bottom: 50px;
+      }
+
+     h2 {
+        margin-bottom: 40px;
+        text-align: center;
+        font-family: "Sedan", serif;
+        font-weight: 400;
+        font-style: normal;
+        color: whitesmoke;
+      }
+      
+    
+    .container {
+      max-width: 400px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #2a2929;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    label {
+      font-weight: bold;
+      display: block;
+      margin-bottom: 5px;
+      font-family: "Sedan", serif;
+      font-weight: 400;
+      font-style: normal;
+      color: whitesmoke;
+    }
+
+    input[type="text"], input[type="number"], input[type="date"] {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-bottom: 10px;
+    }
+
+
+
+    input[type="submit"] {
+      color: black;
+      border: none;
+      border-radius: 15px;
+      padding: 10px 20px;
+      cursor: pointer;
+      margin-left: 160px;
+      margin-top: 20px;
+      background-color: #ea9247;
+      font-weight: bold;
+    }
+
+    input[type="submit"]:hover {
+      background-color:#d2691e;
+    }
+  </style>
+</head>
+<body>
+    <h1 class="head">SaralSiksha</h1>
+<div class="container">
+  <h2>Payment Details</h2>
+  <form id="paymentForm">
+    <div class="form-group">
+      <label for="cardNumber">Card Number:</label>
+      <input type="text" id="cardNumber" name="cardNumber" required>
+    </div>
+    <div class="form-group">
+      <label for="expiryDate">Expiry Date (MM/YYYY):</label>
+      <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YYYY" pattern="^(0[1-9]|1[0-2])\/\d{4}$" required>
+    </div>
+    <div class="form-group">
+      <label for="cvv">CVV:</label>
+      <input type="text" id="cvv" name="cvv" required>
+    </div>
+    <div class="form-group">
+      <label for="amount">Amount:</label>
+      <input type="number" id="amount" name="amount" required>
+    </div>
+    <div class="form-group">
+      <input type="submit" value="Pay">
+    </div>
+  </form>
+</div>
+<button class="back-btn" onclick="Back()">Back</button>
+</body>
+</html>
+<script>
+  function Back(){
+    window.location.href = "registered_courses.html";
+  }
+</script>

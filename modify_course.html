@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modify Courses</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="head">SaralSiksha</h1>
+<h3>You can modify the schedule here</h3>
+
+<div class="courses-container">
+  <div class="course-box">
+    <h2>JAVA</h2>
+    <p><strong>Course ID:</strong> 12345</p>
+    <p>A programming language commonly used for building web applications and enterprise software.</p>
+    <p><strong>Schedule:</strong> <span id="schedule5">2024-04-20</span></p>
+    <button class="modify-btn" onclick="modifySchedule('schedule5')">Modify</button>
+  </div>
+
+  <div class="course-box">
+    <h2>C++</h2>
+    <p><strong>Course ID:</strong> 12346</p>
+    <p>A powerful and flexible programming language often used for system and application software, game development, and more.</p>
+    <p><strong>Schedule:</strong><span id="schedule1">2024-04-20</span></p>
+    <button class="modify-btn" onclick="modifySchedule('schedule1')">Modify</button>
+  </div>
+
+  <div class="course-box">
+    <h2>Python</h2>
+    <p><strong>Course ID:</strong> 12347</p>
+    <p>An interpreted, high-level programming language known for its simplicity and readability. It's widely used in web development, data analysis, artificial intelligence, and more.</p>
+    <p><strong>Schedule:</strong><span id="schedule2">2024-04-20</span></p>
+    <button class="modify-btn" onclick="modifySchedule('schedule2')">Modify</button>
+  </div>
+
+  <div class="course-box">
+    <h2>Web Programming</h2>
+    <p><strong>Course ID:</strong> 12348</p>
+    <p>A course covering various aspects of web development, including HTML, CSS, JavaScript, and backend frameworks like Node.js or Django.</p>
+    <p><strong>Schedule:</strong><span id="schedule3">2024-04-20</span></p>
+    <button class="modify-btn" onclick="modifySchedule('schedule3')">Modify</button>
+  </div>
+
+  <div class="course-box">
+    <h2>DBMS</h2>
+    <p><strong>Course ID:</strong> 12349</p>
+    <p>Database Management System (DBMS) is a software for managing databases. This course covers database design, implementation, and querying using SQL.</p>
+    <p><strong>Schedule:</strong><span id="schedule4">2024-04-20</span></p>
+    <button class="modify-btn" onclick="modifySchedule('schedule4')">Modify</button>
+  </div>
+</div>
+<button class="back-btn" onclick="Back()">Back</button>
+<script>
+  function Back(){
+    window.location.href = "admin.html";
+  }
+  
+  function modifySchedule(id) {
+    var newDate = prompt("Enter new schedule date (YYYY-MM-DD):");
+    if (newDate !== null && newDate !== "") {
+      document.getElementById(id).textContent = newDate;
+    }
+  }
+</script>
+
+</body>
+</html>
